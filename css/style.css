@@ -6,7 +6,7 @@ html {
 body {
   background-color: #fff;
   color: #333;
-  font-family: "Nato Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -265,7 +265,7 @@ body.is-fixed .header {
 }
 
 .features__sub-title:nth-of-type(1) {
-  margin-top: 57px;
+  margin-top: 53px;
 }
 
 .features-desc {
@@ -369,7 +369,7 @@ body.is-fixed .header {
   width: 100%;
   max-width: 926px;
   height: 410px;
-  margin: 70px auto 45px;
+  margin: 73px auto 45px;
   background-color: #fff;
   -webkit-box-shadow: 0 3px 6px #00000029;
   box-shadow: 0 3px 6px #00000029;
@@ -394,7 +394,7 @@ body.is-fixed .header {
 }
 
 .faq {
-  padding: 70px 0 85px;
+  padding: 67px 0 85px;
   font-weight: bold;
 }
 
@@ -459,7 +459,7 @@ body.is-fixed .header {
   justify-content: space-between;
   width: 100%;
   max-width: 1366px;
-  margin: 58px auto 0;
+  margin: 61px auto 0;
   padding: 0 70px;
 }
 
@@ -534,7 +534,7 @@ body.is-fixed .header {
 }
 
 .contact {
-  padding: 79px 0 67px;
+  padding: 76px 0 73px;
   background: -webkit-gradient(linear, left top, right top, from(#05A5FA), color-stop(90%, #63FBD7), to(#67FFD6));
   background: linear-gradient(90deg, #05A5FA 0%, #63FBD7 90%, #67FFD6 100%);
   font-weight: bold;
@@ -577,7 +577,7 @@ body.is-fixed .header {
 .form__title::after {
   display: inline-block;
   position: absolute;
-  top: -50%;
+  top: -15%;
   width: 60px;
   margin-left: 20px;
   padding: 4px 0;
@@ -609,7 +609,7 @@ textarea {
   width: 80%;
   height: 180px;
   margin-top: 40px;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 3px;
   outline: none;
