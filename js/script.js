@@ -1,12 +1,15 @@
 $(function() {
   // ヘッダー固定
   var navG = $('.navGlobal').offset().top;
+  var height = $('#header').outerHeight(true);
   $(window).scroll(function() {
     if ($(window).scrollTop() > navG) {
       $('body').addClass('is-fixed');
+      $('body').css('margin-top', height);
     } else {
       $('body').removeClass('is-fixed');
-    }
+      $('body').css('margin-top', 0);
+    }    
   });
   // アコーディオン
   $('.faq-list li').click(function() {
@@ -80,6 +83,10 @@ $(function() {
       // $('.navGlobal').slideDown();
       $('.navGlobal-sp').css('transform', 'translateY(0vh)');
     }
+  });
+  // ハンバーガーメニューのaリンクがクリックされたら、メニューが閉じる
+  $('.navGlobal-list-sp a').click(function() {
+    $('.nav-button').trigger('click');
   });
   
   // swiper
