@@ -67,6 +67,7 @@ img {
   left: 0;
   width: 100%;
   height: auto;
+  background-color: #fff;
   -webkit-box-shadow: 0 3px 6px #00000029;
   box-shadow: 0 3px 6px #00000029;
   -webkit-transition: background-color .15s;
@@ -139,6 +140,11 @@ body.is-fixed .header {
   line-height: 1.5;
 }
 
+.navGlobal__item a {
+  color: #333;
+  cursor: pointer;
+}
+
 .navGlobal__item:last-of-type {
   margin-right: 50px;
   padding-right: 0;
@@ -148,6 +154,11 @@ body.is-fixed .header {
   margin-left: 16px;
   font-size: 2.4rem;
   line-height: 1.4;
+}
+
+.navGlobal__title a {
+  color: #333;
+  cursor: pointer;
 }
 
 .nav-button {
@@ -210,7 +221,7 @@ body.is-fixed .header {
   max-width: 1366px;
   height: 674px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .mainView-img {
@@ -218,13 +229,14 @@ body.is-fixed .header {
 }
 
 .mainView-img.circle {
+  z-index: -1;
   top: -125px;
   right: -85px;
 }
 
 .mainView-img.human {
   top: 130px;
-  left: 50%;
+  right: 172px;
 }
 
 .mainView-desc {
@@ -531,6 +543,7 @@ body.is-fixed .header {
 .swiper-container {
   max-width: 1366px;
   margin-top: 74px;
+  overflow: visible;
 }
 
 .contact {
@@ -702,6 +715,9 @@ a.end-message {
   .navGlobal__title {
     font-size: 2.2rem;
   }
+  .mainView-img.human {
+    right: 0;
+  }
   .mainView-desc__title {
     font-size: 2.8rem;
   }
@@ -709,17 +725,17 @@ a.end-message {
     margin: 74px 0 70px;
   }
   .features__sub-title:nth-of-type(1) {
-    margin-top: 30px;
+    margin-top: 80px;
   }
   .features__sub-title {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-size: 2.4rem;
   }
   .features-desc {
-    margin: 0 auto 60px;
+    margin: 0 auto 80px;
   }
   .features-desc:nth-of-type(3) {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .features-desc {
     display: block;
@@ -754,6 +770,7 @@ a.end-message {
   }
   .header {
     position: fixed;
+    background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -809,6 +826,19 @@ a.end-message {
   .features-desc__heading {
     font-size: 2.2rem;
   }
+  .coding-desc {
+    margin-top: 0;
+  }
+  .coding__heading {
+    margin-bottom: 50px;
+  }
+  .high-quality__heading {
+    margin-bottom: 50px;
+  }
+  .response__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
   .price {
     padding: 55px 10px 70px;
   }
@@ -846,6 +876,7 @@ a.end-message {
   }
   .swiper-container {
     margin-top: 60px;
+    overflow: hidden;
   }
   .contact-form {
     max-width: 100%;
