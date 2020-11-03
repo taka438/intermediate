@@ -3,13 +3,13 @@ $(function() {
   var navG = $('.navGlobal').offset().top;
   var height = $('#header').outerHeight(true);
   $(window).scroll(function() {
-    if ($(window).scrollTop() > navG) {
+    if ($(window).scrollTop() > navG && navG !== 0) {
       $('body').addClass('is-fixed');
       $('body').css('margin-top', height);
     } else {
       $('body').removeClass('is-fixed');
       $('body').css('margin-top', 0);
-    }    
+    }
   });
   // アコーディオン
   $('.faq-list li').click(function() {
@@ -76,12 +76,10 @@ $(function() {
     var navBtn = $(this).find('.nav-button_line');
     if (navBtn.hasClass('is-nav-open')) {
       navBtn.removeClass('is-nav-open');
-      // $('.navGlobal').slideUp();
-      $('.navGlobal-sp').css('transform', 'translateY(-100vh)');
+      $('.navGlobal-sp').slideUp();
     } else {
       navBtn.addClass('is-nav-open');
-      // $('.navGlobal').slideDown();
-      $('.navGlobal-sp').css('transform', 'translateY(0vh)');
+      $('.navGlobal-sp').slideDown();
     }
   });
   // ハンバーガーメニューのaリンクがクリックされたら、メニューが閉じる
